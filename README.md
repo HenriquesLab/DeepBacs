@@ -11,10 +11,10 @@ In our opinion, the lack of meaningful examples and accessible image data preven
 
 **We want to change this!** 
 
-DeepBugs does not provide novel code, but uses popular DL networks implemented in the [ZeroCostDL4Mic platform](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki).
+DeepBacs does not provide novel code, but uses popular DL networks implemented in the [ZeroCostDL4Mic platform](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki).
 It provides easy access to DL networks in a streamlined format and, together with suitable data, enables scientists to deep into the DL universe rapidly and without hardware acquistion.
 
-The learning approaches employed in DeepBugs were pioneered by many great scientists
+The learning approaches employed in DeepBacs were pioneered by many great scientists
 
 * Martin Weigert
 * Uwe Schmidt
@@ -22,6 +22,7 @@ The learning approaches employed in DeepBugs were pioneered by many great scient
 * Loic A. Royer
 * Virginie Uhlmann
 * Joseph Redmon
+* Gregory R. Johnson
 * ... **add more people here**
 
 
