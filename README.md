@@ -1,7 +1,7 @@
-# DeepBugs
+# DeepBacs
 ## Deep-learning assisted bioimage analysis in microbiology using open-source technology
 
-DeepBugs demonstrates the potential of open-source deep-learning approaches in microbiological research.
+DeepBacs demonstrates the potential of open-source deep-learning approaches in microbiological research.
 We provide dataset that can be used to train models for different tasks, e.g. image segmentation, denoising, artificial labeling or prediction of super-resolution images.
 
 
