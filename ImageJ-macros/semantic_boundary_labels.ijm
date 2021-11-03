@@ -2,8 +2,8 @@
 // Date: October-2021
 // Citation: 
 // Authors: 
-// C. Spahn, R. F. Laine, P. Matos Pereira, L. von Chamier, M.ia Conduit, 
-// E. Gómez-de-Mariscal, M. Gomes de Pinho, G. Jacquemet, S. Holden, 
+// C. Spahn, R. F. Laine, P. Matos Pereira, E. Gómez-de-Mariscal,
+// L. von Chamier, M.ia Conduit, M. Gomes de Pinho, G. Jacquemet, S. Holden, 
 // M. Heilemann, R. Henriques
 //
 // Title: 
