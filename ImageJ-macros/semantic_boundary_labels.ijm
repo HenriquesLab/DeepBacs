@@ -23,9 +23,9 @@
 //  new_folder_seg: the name of the new folder containing the semantic segmentation
 //-------------------------------------------------------------------------
 
-PATH = "/Users/esti/Documents/DeepBact/Segmentation_Mixed/Bsubtilis/training/"
-input_folder = "target/"
-new_folder_seg = "semantic_segmentation/"
+PATH = "/Users/esti/Documents/DeepBact/Segmentation_Mixed/Bsubtilis/training/";
+input_folder = "target/";
+new_folder_seg = "semantic_segmentation/";
 
 files = getFileList(PATH + input_folder);
 print(files.length+" images in the directory " + PATH);
@@ -42,8 +42,7 @@ for (i=0; i<files.length; i++) {
 	if (endsWith(files[i], ".tif")){
 		
 		// store the name of the image to save the results
-		image_name = split(files[i], ".");
-		image_name = image_name[0];  
+		image_name = File.getNameWithoutExtension(PATH + input_folder + files[i]);
 
 		// open the image
 		open(PATH + input_folder + files[i]);		
