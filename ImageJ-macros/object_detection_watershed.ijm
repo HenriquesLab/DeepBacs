@@ -26,9 +26,9 @@
 //-------------------------------------------------------------------------
 
 
-PATH = "/Users/esti/Documents/DeepBact/UNet-training/ECOLI-semantic-03/"
-input_folder = "predictions/"
-new_folder_seg = "instances/"
+PATH = "/Users/esti/Documents/DeepBact/UNet-training/ECOLI-semantic-03/";
+input_folder = "predictions/";
+new_folder_seg = "instances/";
 
 
 files = getFileList(PATH + input_folder);
@@ -46,8 +46,7 @@ for (i=0; i<files.length; i++) {
 	// avoid any subfolder
 	if (endsWith(files[i], ".tif")){
 		// store the name of the image to save the results
-		image_name = split(files[i], ".");
-		image_name = image_name[0];  
+		image_name = File.getNameWithoutExtension(PATH + input_folder + files[i]);
 
 		// open the image and create a mask for all the segmemted labels
 		open(PATH + input_folder + files[i]);	
