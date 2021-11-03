@@ -12,7 +12,7 @@ In our opinion, the **lack of meaningful examples and accessible image data** pr
 DeepBacs does not provide novel code, but uses popular DL networks implemented in the [ZeroCostDL4Mic platform](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki).
 It provides easy access to DL networks in a streamlined format and, together with suitable data, enables scientists to deep into the DL universe rapidly and without hardware acquistion. 
 
-<u>List of tasks with links to the respective Wiki pages:<u>
+**_List of tasks with links to the respective Wiki pages:_**
 
 * [Segmentation](https://github.com/HenriquesLab/DeepBugs/wiki/Segmentation)
 * [Object detection](https://github.com/HenriquesLab/DeepBugs/wiki/Object-Detection)
