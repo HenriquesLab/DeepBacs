@@ -24,3 +24,20 @@ It provides easy access to DL networks in a streamlined format and, together wit
 **The learning approaches employed in DeepBacs are based on the work of many deep learning pioneers.**
 
 Further details about that can be found on the [ZeroCostDL4Mic wiki](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki) and our [DeepBacs wiki](https://github.com/HenriquesLab/DeepBacs/wiki).
+
+
+## Acknowledgements
+
+Our work is based on the networks created by the amazing DL community. We are thus grateful and like to thank the people creating the networks used in DeepBacs:
+
+- Martin Weigert
+- Uwe Schmidt
+- Florian Jug
+- Alexander Krull
+- Loic A. Royer
+- Chawin Ounkomol
+- Gregory R. Johnson
+- Phillip Isola
+- Alexei A. Efros
+- Joseph Redmon
+- Ali Farhadi
