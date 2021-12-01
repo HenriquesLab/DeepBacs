@@ -4,7 +4,6 @@
 DeepBacs demonstrates the potential of open-source deep-learning approaches in microbiological research.
 We provide dataset that can be used to train models for different tasks, e.g. image segmentation, denoising, artificial labeling or prediction of super-resolution images.
 
-
 <img src="https://github.com/HenriquesLab/DeepBugs/blob/main/wiki_files/Figure_1_DeepBugs.png" width="650">
 
 In our opinion, the **lack of meaningful examples and accessible image data** prevents microbiologists to explore deep learning and thus experience its potential.
@@ -25,6 +24,11 @@ It provides easy access to DL networks in a streamlined format and, together wit
 
 Further details about that can be found on the [ZeroCostDL4Mic wiki](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki) and our [DeepBacs wiki](https://github.com/HenriquesLab/DeepBacs/wiki).
 
+## How to cite this work
+
+Christoph Spahn, Romain F. Laine, Pedro Matos Pereira, Estibaliz Gómez de Mariscal, _Lucas von Chamier, Mia Conduit, Mariana Gomes de Pinho, Guillaume Jacquemet, Séamus Holden, Mike Heilemann,  Ricardo Henriques. 
+**DeepBacs: Bacterial image analysis using open-source deep learning approaches. bioRxiv, 2021.** 
+DOI: [https://doi.org/10.1101/2021.11.03.467152](https://doi.org/10.1101/2021.11.03.467152)_
 
 ## Acknowledgements
 
