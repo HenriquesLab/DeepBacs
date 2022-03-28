@@ -26,25 +26,25 @@ for f in files:
         file_data["CIRCULARITY"] = file_data["CIRCULARITY"].astype(float)
         file_data["POSITION_T"] = 2*file_data["POSITION_T"].astype(float) # Add the frame rate in minutes
 
-        # # For normalised measures, uncomment the following lines
+        # For normalised measures, uncomment the following lines
         # ------------------------------
 
-        # for i in ids:
-        #     cell = file_data[file_data["TRACK_ID"]==i]
-        #
-        #     init_a = float(min(cell[cell["POSITION_T"]==min(cell["POSITION_T"])]["AREA"]))
-        #     init_emayor = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_MAJOR"]))
-        #     init_eminor = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_MINOR"]))
-        #     init_aspect = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_ASPECTRATIO"]))
-        #     init_circ = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["CIRCULARITY"]))
-        #
-        #     file_data.loc[file_data["TRACK_ID"] == i, "AREA"] = file_data[file_data["TRACK_ID"] == i]["AREA"] / init_a
-        #     file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_MAJOR"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_MAJOR"] / init_emayor
-        #     file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_MINOR"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_MINOR"] / init_eminor
-        #     file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_ASPECTRATIO"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_ASPECTRATIO"] / init_aspect
-        #     file_data.loc[file_data["TRACK_ID"] == i, "CIRCULARITY"] = file_data[file_data["TRACK_ID"] == i]["CIRCULARITY"] / init_circ
+        for i in ids:
+            cell = file_data[file_data["TRACK_ID"]==i]
 
-        # # Until here
+            init_a = float(min(cell[cell["POSITION_T"]==min(cell["POSITION_T"])]["AREA"]))
+            init_emayor = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_MAJOR"]))
+            init_eminor = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_MINOR"]))
+            init_aspect = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["ELLIPSE_ASPECTRATIO"]))
+            init_circ = float(min(cell[cell["POSITION_T"] == min(cell["POSITION_T"])]["CIRCULARITY"]))
+
+            file_data.loc[file_data["TRACK_ID"] == i, "AREA"] = file_data[file_data["TRACK_ID"] == i]["AREA"] / init_a
+            file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_MAJOR"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_MAJOR"] / init_emayor
+            file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_MINOR"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_MINOR"] / init_eminor
+            file_data.loc[file_data["TRACK_ID"] == i, "ELLIPSE_ASPECTRATIO"] = file_data[file_data["TRACK_ID"] == i]["ELLIPSE_ASPECTRATIO"] / init_aspect
+            file_data.loc[file_data["TRACK_ID"] == i, "CIRCULARITY"] = file_data[file_data["TRACK_ID"] == i]["CIRCULARITY"] / init_circ
+
+        # Until here
         # ------------------------------
 
         if track_id == 0:
@@ -85,24 +85,55 @@ sns.lineplot(bottom=True)
 plt.xlabel("Time (min)")
 plt.tight_layout(h_pad=2)
 
-plt.figure()
-# Randomly reorder the data to make it qualitative
-sns.scatterplot(x='AREA', y='CIRCULARITY', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+# plt.figure()
+# # Randomly reorder the data to make it qualitative
+# sns.scatterplot(x='AREA', y='CIRCULARITY', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+#
+# plt.figure()
+# # Randomly reorder the data to make it qualitative
+# sns.scatterplot(x='AREA', y='ELLIPSE_ASPECTRATIO', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+#
+# plt.figure()
+# # Randomly reorder the data to make it qualitative
+# sns.scatterplot(x='ELLIPSE_MAJOR', y='ELLIPSE_MINOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+#
+# plt.figure()
+# # Randomly reorder the data to make it qualitative
+# sns.scatterplot(x='AREA', y='ELLIPSE_MAJOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+#
+# plt.figure()
+# # Randomly reorder the data to make it qualitative
+# sns.scatterplot(x='ELLIPSE_MINOR', y='ELLIPSE_MAJOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
 
-plt.figure()
+fig = plt.figure(figsize=(5,5))
 # Randomly reorder the data to make it qualitative
-sns.scatterplot(x='AREA', y='ELLIPSE_ASPECTRATIO', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+sns.lineplot(x='POSITION_T', y='AREA', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+plt.xlabel("Time (min)")
+plt.ylabel("Area ($\mu m^2$)")
+fig.savefig(os.path.join(main_path, "normalised_area.png"), format='png')
 
-plt.figure()
-# Randomly reorder the data to make it qualitative
-sns.scatterplot(x='ELLIPSE_MAJOR', y='ELLIPSE_MINOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
 
-plt.figure()
+fig = plt.figure(figsize=(5,5))
 # Randomly reorder the data to make it qualitative
-sns.scatterplot(x='AREA', y='ELLIPSE_MAJOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+sns.lineplot(x='POSITION_T', y='CIRCULARITY', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+plt.xlabel("Time (min)")
+plt.ylabel("Circularity")
+fig.savefig(os.path.join(main_path, "normalised_circularity.png"), format='png')
 
-plt.figure()
+fig = plt.figure(figsize=(5,5))
 # Randomly reorder the data to make it qualitative
-sns.scatterplot(x='ELLIPSE_MINOR', y='ELLIPSE_MAJOR', palette="rocket", hue="STACK_NAME", data=ttrack, legend=False)
+sns.lineplot(x='POSITION_T', y='AREA', palette="rocket", data=ttrack, legend=False)
+plt.xlabel("Time (min)")
+plt.ylabel("Area ($\mu m^2$)")
+fig.savefig(os.path.join(main_path, "normalised_area_total.png"), format='png')
+
+
+fig = plt.figure(figsize=(5,5))
+# Randomly reorder the data to make it qualitative
+sns.lineplot(x='POSITION_T', y='CIRCULARITY', palette="rocket", data=ttrack, legend=False)
+plt.xlabel("Time (min)")
+plt.ylabel("Circularity")
+fig.savefig(os.path.join(main_path, "normalised_circularity_total.png"), format='png')
+
 
 
