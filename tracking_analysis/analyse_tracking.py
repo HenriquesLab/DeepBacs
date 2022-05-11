@@ -5,7 +5,7 @@ import numpy as np
 import seaborn as sns
 import pandas as pd
 
-main_path = "/Users/esti/Documents/DeepBacs/StarDist_predictions_release_stationary_phase"
+main_path = "" # write the path where the data from TrackMate is stored (.csv)
 
 files = os.listdir(main_path)
 
