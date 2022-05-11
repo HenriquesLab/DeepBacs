@@ -52,6 +52,9 @@ for f in files:
         else:
             ttrack = pd.concat([ttrack, file_data]).reset_index(drop=True)
         track_id += max(file_data["TRACK_ID"]) + 1
+
+# Save a csv file with the measures for all the stacks (if you normalised them, they will be normalised)
+ttrack.to_csv(os.path.join(main_path, "computed_measures_all_stacks.csv"))
 del file_data
 
 
