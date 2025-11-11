@@ -26,9 +26,9 @@ Further details about that can be found on the [ZeroCostDL4Mic wiki](https://git
 
 ## How to cite this work
 
-_Christoph Spahn, Romain F. Laine, Pedro Matos Pereira, Estibaliz Gómez de Mariscal, Lucas von Chamier, Mia Conduit, Mariana Gomes de Pinho, Guillaume Jacquemet, Séamus Holden, Mike Heilemann,  Ricardo Henriques. 
-**DeepBacs: Bacterial image analysis using open-source deep learning approaches. bioRxiv, 2021.** 
-DOI: [https://doi.org/10.1101/2021.11.03.467152](https://doi.org/10.1101/2021.11.03.467152)_
+_Christoph Spahn, Estibaliz Gómez de Mariscal, Romain F. Laine, Pedro Matos Pereira, Lucas von Chamier, Mia Conduit, Mariana Gomes de Pinho, Guillaume Jacquemet, Séamus Holden, Mike Heilemann,  Ricardo Henriques. 
+**DeepBacs for multi-task bacterial image analysis using open-source deep learning approaches.** Commun Biol 5, 688 (2022)_
+DOI: [https://doi.org/10.1038/s42003-022-03634-z](https://doi.org/10.1038/s42003-022-03634-z)
 
 [![](https://github.com/HenriquesLab/DeepBacs/blob/main/wiki_files/biorxiv_paper.png)](https://www.nature.com/articles/s42003-022-03634-z)
 
