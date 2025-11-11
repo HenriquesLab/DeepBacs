@@ -30,7 +30,7 @@ _Christoph Spahn, Estibaliz Gómez de Mariscal, Romain F. Laine, Pedro Matos Per
 **DeepBacs for multi-task bacterial image analysis using open-source deep learning approaches.** Commun Biol 5, 688 (2022)_
 DOI: [https://doi.org/10.1038/s42003-022-03634-z](https://doi.org/10.1038/s42003-022-03634-z)
 
-[![](https://github.com/HenriquesLab/DeepBacs/blob/main/wiki_files/biorxiv_paper.png)](https://www.nature.com/articles/s42003-022-03634-z)
+[![](https://github.com/HenriquesLab/DeepBacs/blob/main/wiki_files/commsbio_paper.png)](https://www.nature.com/articles/s42003-022-03634-z)
 
 
 ## Acknowledgements
