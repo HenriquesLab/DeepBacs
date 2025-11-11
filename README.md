@@ -30,7 +30,7 @@ _Christoph Spahn, Romain F. Laine, Pedro Matos Pereira, Estibaliz Gómez de Mari
 **DeepBacs: Bacterial image analysis using open-source deep learning approaches. bioRxiv, 2021.** 
 DOI: [https://doi.org/10.1101/2021.11.03.467152](https://doi.org/10.1101/2021.11.03.467152)_
 
-[![](https://github.com/HenriquesLab/DeepBacs/blob/main/wiki_files/biorxiv_paper.png)](https://doi.org/10.1101/2021.11.03.467152)
+[![](https://github.com/HenriquesLab/DeepBacs/blob/main/wiki_files/biorxiv_paper.png)](https://www.nature.com/articles/s42003-022-03634-z)
 
 
 ## Acknowledgements
